@@ -4,7 +4,7 @@ body{
     background-color: black;
 }
 #container_header{
-    width:100%;
+    width: 1424px;
     background-color: #1A1A40;
     display: inline-flex;
     padding: 5px;
@@ -29,7 +29,7 @@ body{
 }
 /* css da imagem */
 #container_hero{
-    width: 100%;
+    width: 1424px;
     height: 470px;
     background-color: #1A1A40;
     display: inline-flex;
@@ -63,6 +63,7 @@ p{
 }
 /*separação*/
 .contaner_separacao{
+    width: 1424px;
     background-color: #21325E;
     border-bottom: 3px solid #1A1A40;
 }
@@ -99,6 +100,7 @@ p{
 /* container conteudo */
 .container_principal{
     background-color: #3e497a;
+    width: 1424px;
   
 }
 .instrucoes{
@@ -137,7 +139,7 @@ p{
 /*Rodapé*/
 footer{
     background-color: #1A1A40;
-    width: auto;
+    width: 1424px;
     height: auto;
     padding: 10px;
    
