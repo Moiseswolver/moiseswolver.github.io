@@ -1,180 +1,554 @@
-/*cabeçalho */
-body{
-    margin: 0;
-    background-color: black;
-}
-#container_header{
-    width: 1424px;
-    background-color: #1A1A40;
-    display: inline-flex;
-    padding: 5px;
-}
 
-#cabecalhoLeft{
-    width: 50%;
+/*******cabeçalho ********/
+.cabecalho{
+    width: 320px;
     height: 100px;
-    background-color: #1A1A40;     
-}
-#cabecalhoRight{
-    width: 50%;
-    height: 100px;
-    background-color: #1A1A40; 
-    color: aliceblue;  
-}
-#logo{
-    width: 100px;
-    height: 100px;
-    margin-left: 200px;
-    
-}
-/* css da imagem */
-#container_hero{
-    width: 1424px;
-    height: 470px;
     background-color: #1A1A40;
-    display: inline-flex;
-}
-#info_pessoal{
-    width: 50%;
-    height: 470px;
-    background-color: #1A1A40;
-    color: white;
-    text-align:center;
-}
-#hero_imagem{
-    width: 50% ;
-    height: 400px;
     text-align: center;
-}
-#hero{   
-    width: 400px;
-    height: 469px;
-	text-align: center;
-    
+    border-bottom: 3px solid #3e497a;
 }
 
-h1{
-    font-size: 60px;
-}
-p{
-    font-size: 30px;
-    text-align: left;
-    margin-left: 60px;
-}
-/*separação*/
-.contaner_separacao{
-    width: 1424px;
-    background-color: #21325E;
-    border-bottom: 3px solid #1A1A40;
-}
-.inst_separacao{
-    width: 100%;
-    display: inline-flex;
-
-}
-.separacao{ 
-    width: 100%;
-    padding: 20px;
-    display: inline-flex;
-    margin-left: 60px;
-    text-align: center;
-  
+#dados-pessoais{
+    padding-top: 10px;
 }
 
-.informacao{
-    font-size: 30px;
-    color: white;
-    margin-right: 20px;
-    margin-left: 20px;
-
-}
-.bola{
-    width: 17px;
-    height: 17px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    margin-top: 10px;
-
-}
-
-/* container conteudo */
-.container_principal{
-    background-color: #3e497a;
-    width: 1424px;
-  
-}
-.instrucoes{
-    margin: 0 30px 0 80px;
-    max-width: 900px;
-    padding: 70px 0;
-}
-.inst_item{
-    border-left: 3px solid #7c9be9;
-    display: flex;  
-}
-.inst_circle{
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    background-color: #21325E;
-    margin-left: -10px;
-}
-.inst_text{
-    flex: 1;
-    margin-left: 50px;
-}
-.inst_text h2{
-    font-size: 30px;
-    margin: -10px 0 0 0 ;
-}
-.inst_text p{
-    font-size: 25px;
-    line-height: 23px;
-    color: #ccc;
-    margin-bottom: 70px;
-}
-.link{
-    color: white;
-}
-/*Rodapé*/
-footer{
-    background-color: #1A1A40;
-    width: 1424px;
-    height: auto;
-    padding: 10px;
-   
-}
-.rodape{
-    width: 100%;
-    display: inline-flex;
-
-}
-.logo_fim{
-    text-align: left;
+.cabecalho img{
     margin-left: 100px;
-    width: 50%;
-    padding: 10px;
+    width: 90px;
+    height: 90px;
+ 
 }
-.logo_fim img{
-    width: 80px;
-    height: 80px;
+.contaner_separacao{
+    display: none;
 }
-.redes{
-    width: 50%;
-    text-align: left;  
+
+@media (min-width: 450px){
+    .cabecalho{
+        width: 450px;
+        height: 100px;
+        background-color: #1A1A40;
+        text-align: left;
+        padding-left: 50px;
+        border-bottom: 3px solid #3e497a;
+    }
 }
-#facebook{
-    width: 50px;
-    height: 50px;
-    margin: 30px 30px 10px 30px;
+@media (min-width: 700px){
+    .cabecalho{
+        width: 700px;
+        height: 100px;
+        background-color: #1A1A40;
+        text-align: left;
+        padding-left: 50px;
+        border-bottom: 3px solid #3e497a;
+    }
+    .contaner_separacao{
+        display: inline-flex;
+    }
 }
-#linkedin{
-    width: 50px;
-    height: 50px;
-    margin: 30px 10px 10px 30px;
+@media (min-width: 1100px){
+    .cabecalho{
+        width: 1100px;
+        height: 100px;
+        background-color: #1A1A40;
+        text-align: left;
+        padding-left: 50px;
+        border-bottom: 3px solid #3e497a;
+    }
 }
-#instagram{
-    width: 50px;
-    height: 50px;
-    margin: 30px 10px 10px 30px;
+
+/*******Informações pessoais ********/
+.pessoal{
+    width: 320px;
+    color: white;
+    background-color: #1A1A40;
+    text-align: center;
+}
+#hero{
+    width: 300px;
+    height: 200px;
+}
+@media (min-width: 450px){
+    .pessoal{
+        width: 450px;
+        background-color: #1A1A40;
+        text-align: left;
+        padding-left: 50px;
+        border-bottom: 3px solid #3e497a;
+        text-align: center;
+    }
+}
+@media (min-width: 700px){
+    .pessoal{
+        width: 700px;
+        background-color: #1A1A40;
+        text-align: left;
+        border-bottom: 3px solid #3e497a;
+        display: flex;
+    }
+    #hero{
+        width: 400px;
+        height: 400px;
+    }
+    #dados-pessoais{
+        padding: 20px 0 0 20px;
+        text-align: center;
+        font-size: 22px;
+    }
+}
+@media (min-width: 1100px){
+    .pessoal{
+        width: 1100px;
+        background-color: #1A1A40;
+        text-align: left;
+        display: flex;
+    }
+    #hero{
+        margin-top: 35px;
+        width: 400px;
+        height: 450px;
+        
+    }
+    #dados-pessoais{
+        padding: 20px 0 0 30px;
+        text-align: left;
+        font-size: 32px;
+     
+    }
+}
+/*******separação ********/
+@media (min-width: 700px){
+    .contaner_separacao{
+        width: 750px;
+        height: 100px;
+        background-color: #21325E;
+        border-bottom: 3px solid #1A1A40;
+    }
+    .inst_separacao{
+        width: 100%;
+        display: inline-flex;
+    }
+    .separacao{
+        width: 100%;
+        padding: 40px;
+        display: inline-flex;
+        text-align: center;
+    }
+    .informacao{
+        font-size: 18px;
+        color: white;
+        margin-right: 20px;
+    }
+    .bola{
+        width: 10px;
+        height: 10px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        margin-top: 5px;
+        margin-right: 20px;
+
+    }
+}
+@media (min-width: 1100px){
+    .pessoal{
+        width: 1100px;
+        background-color: #1A1A40;
+        text-align: left;
+        display: flex;
+    }
+    #hero{
+        margin-top: 35px;
+        width: 400px;
+        height: 450px;
+        
+    }
+    #dados-pessoais{
+        padding: 20px 0 0 30px;
+        text-align: left;
+        font-size: 32px;
+     
+    }
+}
+@media (min-width: 1150px){
+    .contaner_separacao{
+        width: 1150px;
+        height: 100px;
+        background-color: #21325E;
+        border-bottom: 3px solid #1A1A40;
+    }
+    .inst_separacao{
+        width: 100%;
+        display: inline-flex;
+    }
+    .separacao{
+        width: 100%;
+        padding: 40px;
+        display: inline-flex;
+        text-align: center;
+    }
+    .informacao{
+        font-size: 22px;
+        color: white;
+        margin-right: 20px;
+        margin-left: 20px;
+    
+    }
+    .bola{
+        width: 17px;
+        height: 17px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        margin-top: 5px;
+    
+    }
+}
+/*******informação profissional ********/
+@media (min-width: 320px){
+    .container_principal{
+    width: 320px;
+    background-color: #1A1A40;
+    }
+    .instrucoes{
+        margin: 0 10px 0 20px;
+        padding: 5px 0;
+  
+    }
+    .inst_item{
+        margin-top: 20px;
+        border-left: 3px solid #7c9be9;
+        display: flex;
+        
+
+    }
+    .inst_circle{
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+        background-color: #21325E;
+        margin-left: -10px;
+  
+    }
+    .inst_text{
+        flex: 1;
+        margin-left: 20px;
+        margin-top: -20px;
+        color: #ccc;
+        
+    }
+    .inst_text h2{
+        font-size: 25px;
+    }
+    .inst_text p{
+        font-size: 18px;
+        line-height: 23px;
+        color: #ccc;
+        margin-bottom: 70px;
+    }
+    .link{
+        color: white;
+    }
+
+}
+@media (min-width: 500px){
+    .container_principal{
+    width: 500px;
+    background-color: #1A1A40;
+   
+
+    }
+    .instrucoes{
+        margin: 0 10px 0 20px;
+        padding: 5px 0;
+  
+    }
+    .inst_item{
+        margin-top: 20px;
+        margin-left: 20px;
+        border-left: 3px solid #7c9be9;
+        display: flex;
+        
+
+    }
+    .inst_circle{
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+        background-color: #21325E;
+        margin-left: -10px;
+  
+    }
+    .inst_text{
+        flex: 1;
+        margin-left: 60px;
+        margin-top: -20px;
+        color: #ccc;
+        
+    }
+    .inst_text h2{
+        font-size: 25px;
+    }
+    .inst_text p{
+        font-size: 18px;
+        line-height: 23px;
+        color: #ccc;
+        margin-bottom: 70px;
+    }
+    .link{
+        color: white;
+    }
+}
+@media (min-width: 750px){
+    .container_principal{
+    width: 750px;
+    background-color: #1A1A40;
+   
+
+    }
+    .instrucoes{
+        margin: 0 10px 0 20px;
+        padding: 5px 0;
+  
+    }
+    .inst_item{
+        margin-top: 20px;
+        margin-left: 50px;
+        border-left: 3px solid #7c9be9;
+        display: flex;
+        
+
+    }
+    .inst_circle{
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+        background-color: #21325E;
+        margin-left: -10px;
+  
+    }
+    .inst_text{
+        flex: 1;
+        margin-left: 100px;
+        margin-top: -20px;
+        color: #ccc;
+        
+    }
+    .inst_text h2{
+        font-size: 30px;
+    }
+    .inst_text p{
+        font-size: 20px;
+        line-height: 23px;
+        color: #ccc;
+        margin-bottom: 70px;
+    }
+    .link{
+        color: white;
+    }
+}
+@media (min-width: 1150px){
+    .container_principal{
+    width: 1150px;
+    background-color: #1A1A40;
+   
+
+    }
+    .instrucoes{
+        margin: 0 10px 0 20px;
+        padding: 5px 0;
+  
+    }
+    .inst_item{
+        margin-top: 20px;
+        margin-left: 50px;
+        border-left: 3px solid #7c9be9;
+        display: flex;
+        
+
+    }
+    .inst_circle{
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+        background-color: #21325E;
+        margin-left: -10px;
+  
+    }
+    .inst_text{
+        flex: 1;
+        margin-left: 100px;
+        margin-top: -20px;
+        color: #ccc;
+        
+    }
+    .inst_text h2{
+        font-size: 40px;
+    }
+    .inst_text p{
+        font-size: 30px;
+        line-height: 23px;
+        color: #ccc;
+        margin-bottom: 70px;
+    }
+    .link{
+        color: white;
+    }
+}
+/*******Rodape ********/
+@media (min-width: 320px){
+    .rodape{
+        width: 320px;
+        height: 100px;
+        background-color: #1A1A40;
+        border-bottom: 3px solid #3e497a;
+        border-top: 3px solid #3e497a;
+        display: flex;
+    }
+    .logo_fim{
+        display: none;
+    }
+    .logo_fim img{
+        width: 80px;
+        height: 80px;
+    }
+    .redes{
+        width: 50%;
+        text-align: left; 
+        display: flex; 
+    }
+    #facebook{
+        width: 50px;
+        height: 50px;
+        margin: 30px 30px 10px 30px;
+    }
+    #linkedin{
+        width: 50px;
+        height: 50px;
+        margin: 30px 10px 10px 15px;
+    }
+    #instagram{
+        width: 50px;
+        height: 50px;
+        margin: 30px 10px 10px 30px;
+    }
+    
+}
+@media (min-width: 500px){
+    .rodape{
+        width: 500px;
+        height: 100px;
+        background-color: #1A1A40;
+        border-bottom: 3px solid #3e497a;
+        border-top: 3px solid #3e497a;
+        display: flex;
+    }
+    .logo_fim{
+        display: inline-flex;
+        width: 60px;
+        height: 60px;
+        margin: 15px 80px 10px 30px;
+    }
+    .logo_fim img{
+        width: 80px;
+        height: 80px;
+    }
+    .redes{
+        width: 50%;
+        text-align: left; 
+        display: flex; 
+    }
+    #facebook{
+        width: 50px;
+        height: 50px;
+        margin: 30px 30px 10px 30px;
+    }
+    #linkedin{
+        width: 50px;
+        height: 50px;
+        margin: 30px 10px 10px 15px;
+    }
+    #instagram{
+        width: 50px;
+        height: 50px;
+        margin: 30px 10px 10px 30px;
+    }
+    
+}
+@media (min-width: 750px){
+    .rodape{
+        width: 750px;
+        height: 100px;
+        background-color: #1A1A40;
+        border-bottom: 3px solid #3e497a;
+        border-top: 3px solid #3e497a;
+        display: flex;
+    }
+    .logo_fim{
+        display: inline-flex;
+        width: 60px;
+        height: 60px;
+        margin: 15px 80px 10px 150px;
+    }
+    .logo_fim img{
+        width: 80px;
+        height: 80px;
+    }
+    .redes{
+        width: 50%;
+        text-align: left; 
+        display: flex; 
+    }
+    #facebook{
+        width: 50px;
+        height: 50px;
+        margin: 30px 60px 10px 30px;
+    }
+    #linkedin{
+        width: 50px;
+        height: 50px;
+        margin: 30px 60px 10px 15px;
+    }
+    #instagram{
+        width: 50px;
+        height: 50px;
+        margin: 30px 10px 10px 30px;
+    }
+    
+}
+@media (min-width: 1150px){
+    .rodape{
+        width: 1150px;
+        height: 100px;
+        background-color: #1A1A40;
+        border-bottom: 3px solid #3e497a;
+        border-top: 3px solid #3e497a;
+        display: flex;
+    }
+    .logo_fim{
+        display: inline-flex;
+        width: 100px;
+        height: 100px;
+        margin: 5px 0px 0px 150px;
+    }
+    .logo_fim img{
+        width: 90px;
+        height: 90px;
+    }
+    .redes{ 
+        margin-left: 200px;
+        display: flex; 
+    }
+    #facebook{
+        width: 50px;
+        height: 50px;
+        margin: 30px 60px 10px 30px;
+    }
+    #linkedin{
+        width: 50px;
+        height: 50px;
+        margin: 30px 60px 10px 15px;
+    }
+    #instagram{
+        width: 50px;
+        height: 50px;
+        margin: 30px 10px 10px 30px;
+    }
 }
