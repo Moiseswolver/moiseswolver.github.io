@@ -175,7 +175,7 @@ body{
         background-color: #21325E;
     }
     .inst_separacao{
-        width: 800px;
+        width: auto;
         height: 100px;
         display: inline-flex;
     }
@@ -345,3 +345,4 @@ body{
     }
     
 }
+    
