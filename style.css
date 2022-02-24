@@ -238,7 +238,7 @@ body{
 }
 
 /****quando a tela estiver 360px *****/
-@media (max-width: 360px){
+@media (max-width: 375px){
     .cabecalho{
         width: auto;
         height: 100px;
