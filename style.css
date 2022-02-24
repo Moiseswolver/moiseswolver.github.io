@@ -238,9 +238,9 @@ body{
 }
 
 /****quando a tela estiver 360px *****/
-@media (width: 360px){
+@media (width: 320px){
     .cabecalho{
-        width: 360px;
+        width: 320px;
         height: 100px;
         background-color: #1A1A40;
         border-bottom: 3px solid #3e497a;
@@ -314,7 +314,7 @@ body{
         color: white;
     }
     .rodape{
-        width: 360px;
+        width: 320px;
         height: 100px;
         background-color: #1A1A40;
         border-bottom: 3px solid #3e497a;
